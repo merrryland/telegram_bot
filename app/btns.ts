@@ -1,4 +1,4 @@
-﻿export const gameBtns = {
+﻿export const gameBtns: any = {
   reply_markup: JSON.stringify({
     inline_keyboard: [
       [
@@ -20,7 +20,7 @@
     ],
   }),
 };
-export const againBtn = {
+export const againBtn: any = {
   reply_markup: JSON.stringify({
     inline_keyboard: [[{ text: 'Играть еще раз', callback_data: '/again' }]],
   }),

@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "cross-env BOT=0 NODE_ENV=development tsc-watch --onSuccess \"node ./build/app/index.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.64.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "pm2": "^5.3.0",
+    "reflect-metadata": "^0.2.1",
+    "tsc-watch": "^6.0.4"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.64.1",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.3.3"
   }
 }
